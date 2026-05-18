@@ -10,14 +10,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background: linear-gradient(135deg, #000000, #1a1a1a);
 }
 
 .container {
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
     width: 350px;
     text-align: center;
 }
@@ -36,6 +36,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    color: #222;
 }
 
 input {
@@ -44,6 +45,11 @@ input {
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 button {
